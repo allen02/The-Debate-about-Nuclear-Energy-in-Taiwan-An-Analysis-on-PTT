@@ -176,6 +176,8 @@ Figure 3: Top 10 sub-forums
 
 ![](media/10e1e972774218d729f54089b2e0003b.png)
 
+Figure 4: Top 10 title tag
+
 As for figure 4, we can the two most popular title tag[^4] are 問卦 (ask for
 gossip) and 新聞 (news), and I am not certain what “姆咪” means.
 
@@ -183,7 +185,6 @@ gossip) and 新聞 (news), and I am not certain what “姆咪” means.
 (by adding something like [title tag]), if the author decides not to add any
 tag, it will be “no_title_tag” in figure 4
 
-Figure 4: Top 10 title tag
 
 Social Network Analysis
 -----------------------
@@ -208,25 +209,21 @@ modularity 0.36). Hence, I decided to only observe these 12 communities and
 ignore the ones which are rather small. And in table 2, we can also see that the
 biggest communities consists of 43.73% of nodes, which is nearly half.
 
-|   | Erdos Renyi game[^5] |
-|---|----------------------|
+|                                           | Erdos Renyi game[^5] |Degree sequence game[^6] |
+|-------------------------------------------|----------------------|-------------------------|
+| average modularity                        |        0.0469        |          0.03395        |
+| standard deviation of modularity          |        0.0007        |          0.00048        |
+| average number of community               |        7.04          |          9.44           |
+| standard deviation of number of community |        1.0142        |          0.87985        |
 
+Table 1: Results of 100 random networks
 
 [^5]: Creating random networks with the same number of nodes and edges.
 
-    Degree sequence game[^6]
+[^6]: Creating random networks with the same degree sequence.
 
-    [^6]: Creating random networks with the same degree sequence.
-
-| average modularity                        | 0.0469 | 0.03395 |   |   |
-|-------------------------------------------|--------|---------|---|---|
-| standard deviation of modularity          | 0.0007 | 0.00048 |   |   |
-| average number of community               | 7.04   | 9.44    |   |   |
-| standard deviation of number of community | 1.0142 | 0.87985 |   |   |
 
 ![](media/dc14b98b242c2c248de05258df5bc25a.png)
-
-Table 1: Results of 100 random networks
 
 Table 2: Features of the communities
 
@@ -255,9 +252,9 @@ communities. Of course, there are some small peaks (dark green line in figure
 
 ![C:\\Users\\User\\Documents\\R\\social network analysis research project-PTT\\data\\graph\\date and time distribution\\commu_date_line.png](media/e86205ce6588789784d815d03b994c8d.png)
 
-![](media/ec5d3a5448dfd905a1481578e57fde8a.png)
-
 Figure 5: Active dates of each community
+
+![](media/ec5d3a5448dfd905a1481578e57fde8a.png)
 
 Figure 6: Active time of each community (without the biggest one)[^9]
 
@@ -266,11 +263,11 @@ community.
 
 ![](media/b76697d35a412eeba2728a76cdc3528e.png)
 
+Figure 7: Percentage of sub-forums in each community
+
 In figure 7, we see that “Gossiping sub-forum” is dominant in each community,
 except for community 2 and 6. For community 2, I assume this is because some
 woman environmental groups are active there, but I have no further evidence.
-
-Figure 7: Percentage of sub-forums in each community
 
 ![](media/b3964990f30c65add6f00b60294d05a6.png)
 
@@ -298,12 +295,12 @@ particular document, but less frequent across the documents.
 
 ![](media/6473816fab04f14640476dff0f76408f.png)
 
+Figure 9: Topics summary with expected topic proportion
+
 After this, I combined each user’s replies into one document, and used these
 documents to fit topic models in “stm” package. I tried different numbers of
 topics from 10 to 30, and subjectively picked 23 topics because I believe this
 one has the most intuitive topic clusters. The result is in figure 9.
-
-Figure 9: Topics summary with expected topic proportion
 
 ![](media/e8f43bf7acca3927b3a83ea14ebc728e.png)
 
@@ -404,6 +401,7 @@ In the end, I think the biggest downside of this research is the lack of user
 information. If this is available, we can characterize communities much easier.
 
 Appendix: R Code
+================
 
 ### 0. Background setting
 
@@ -1781,6 +1779,3 @@ ggplot(data, aes(x = variable, y = value)) +
     facet_grid(.~membership, labeller = labeller(membership = membership_label))
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

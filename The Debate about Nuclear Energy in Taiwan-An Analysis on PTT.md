@@ -1,43 +1,9 @@
-Final Research Report
-
 **The Debate about Nuclear Energy in Taiwan:**
 
 **An Analysis on PTT**
 
 *By Allen Yi B03302310*
-
-Figures
-=======
-
->   [Figure 1: Number of articles on each day 5](#_Toc518469265)
-
->   [Figure 2: Articles starting from 2017-5-1 6](#_Toc518469266)
-
->   [Figure 3: Top 10 sub-forums 7](#_Toc518469267)
-
->   [Figure 4: Top 10 title tag 7](#_Toc518469268)
-
->   [Figure 5: Active dates of each community 9](#_Toc518469269)
-
->   [Figure 6: Active time of each community (without the biggest one)
->   9](#_Toc518469270)
-
->   [Figure 7: Percentage of sub-forums in each community 10](#_Toc518469271)
-
->   [Figure 8: Community to community matrix 10](#_Toc518469272)
-
->   [Figure 9: Topics summary with expected topic proportion 11](#_Toc518469273)
-
->   [Figure 10: Topic distribution across communities 12](#_Toc518469274)
-
->   [Figure 11: Topic distribution within each community 13](#_Toc518469275)
-
-Tables
-======
-
->   [Table 1: Results of 100 random networks 8](#_Toc518469276)
-
->   [Table 2: Features of the communities 8](#_Toc518469277)
+  
 
 Introduction
 ============

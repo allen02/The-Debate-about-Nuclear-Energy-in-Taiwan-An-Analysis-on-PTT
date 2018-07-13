@@ -1,8 +1,4 @@
-**The Debate about Nuclear Energy in Taiwan:**
-
-**An Analysis on PTT**
-
-*By Allen Yi B03302310*
+# The Debate about Nuclear Energy in Taiwan An Analysis on PTT
   
 
 Introduction
